@@ -1,31 +1,321 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-    <script src="https://kit.fontawesome.com/c48f5f3b0b.js" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-        
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
-        <link rel="stylesheet" type="text/css" href="styles.css">
-
-        <title>istagram photo with bootsrap</title>
-
-</head>
-
-<body>
-    <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg navbar-liigth bg-light">
-            <div class="container">
-                <a class="navbar-brand" href="#"><i class="fa-brands fa-instagram" style="font-size:30px;"> <img src="https://1000marcas.net/wp-content/uploads/2019/11/Instagram-Logo-2015-2016.png" alt="" width="120">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collpse" data-bs-target="#navbarsupportcontent" aria-controls="navbarsupportcontent" aria-expanded="false" aria-multiselectable="toggle navigation">
-                     <span class="navbar-toggler-icon"> </span>   
-                    </button>
-                    <div class="navbar-nav" id="navbarsuppportcontent">
-                        <form class="d-flex">
-
     
-</body>
-</html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+       
+        <script src="https://kit.fontawesome.com/c48f5f3b0b.js" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+            
+            
+    
+        <title>Instagram Post with Bootsrap</title>
+    </head>
+    
+    <body>
+        <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+              <a class="navbar-brand" href="#"><i class="fa-brands fa-instagram" style="font-size:30px;"></i><img src="https://1000marcas.net/wp-content/uploads/2019/11/Instagram-Logo-2013-2015.png" alt="" width="100" height="60" class="d-inline-block align-text-top"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="navbar-nav" id="navbarSupportedContent">
+                    <form class="d-flex">
+                                         
+                      
+                      
+                      
+                        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Create a new post
+                      </button>
+    
+                     
+                      
+                      
+                      
+                      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel"><textarea class="w-100" id="w3review" name="w3review" rows="2" cols="50"></textarea></h5>
+                              
+                          
+                          
+                            </div>
+                            <div class="modal-body">
+                              <button type="button" class="btn btn-dark"><i class="bi bi-camera"></i></button>
+                              <button type="button" class="btn btn-dark"><i class="bi bi-geo-alt"></i></button>
+                            </div>
+                          
+                          
+                          
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                              <button type="button" class="btn btn-success">Publish</button>
+                            </div>
+                          </div>
+                        </div>
+                    
+                    
+                    </div>
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">                                
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa-solid fa-gear"></i>
+                                </a>
+                               
+                               
+                               
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">account</a></li>
+                                <li><a class="dropdown-item" href="#">perfil </a></li>
+                                <li><a class="dropdown-item" href="#">password</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Log Out</a></li>
+                                </ul>
+                            </li>                                
+                        </ul>
+                    </form>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <ul class="nav nav-pills my-3  d-flex justify-content-center" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active " id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true"><i class="bi bi-list" style="color: rgb(255, 5, 9);" ></i></button>
+           
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link " id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false"><i class="bi bi-grid-3x3-gap-fill" style="color: rgb(0, 247, 95);"></i></button>
+            </li>
+          
+        
+        </ul>
+          <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                <div class="row d-flex justify-content-center my-2">
+                            
+        
+        
+        
+                    <div class="card" style="width: 37rem;">
+                                <div class="header">
+                                    <h5>First picture</h5>
+                                    <span class="date">12/20</span>
+                                </div>
+                                
+                                <img src="https://images.pexels.com/photos/12194930/pexels-photo-12194930.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                                     
+                                <p class="card-text">Dependientes del hielo marino para cazar, se ven afectados por el cambio climático, ya que el deshielo reduce su hábitat y dificulta su acceso a las presas.</p>
+                                    <div class="footer">
+                                    <span class="p-1"><i class="fa fa-heart-o" style="font-size: 20px;" aria-hidden="true"></i></span>
+                                    <input class="rounded text-secondary mr-2">
+                                    <i class=" icon1 fa-solid fa-ellipsis-vertical "></i>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+        
+        
+                        <div class="row d-flex justify-content-center my-5">
+                            
+                            <div class="card" style="width: 37rem;">
+                                <div class="header">
+                                    <h5>Second post</h5>
+                                    <span class="date">12/20</span>
+                                </div>
+                                
+                                <img src="https://images.pexels.com/photos/302271/pexels-photo-302271.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                                     
+                                <p class="card-text"> La ballena azul estuvo en peligro crítico de extinción debido a la caza comercial de ballenas en el pasado. Sin embargo, en la actualidad, han experimentado una recuperación parcial y su estado de conservación se ha mejorado a En peligro en muchas regiones debido a la prohibición de la caza de ballenas</p>
+                                    <div class="footer">
+                                    <span class="p-1"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
+                                    <input class="rounded text-secondary mr-2">
+                                    <i class=" icon1 fa-solid fa-ellipsis-vertical "></i>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+        
+        
+        
+                        <div class="row d-flex justify-content-center my-5">
+                            
+                            <div class="card" style="width: 37rem;">
+                                <div class="header">
+                                    <h5>new post</h5>
+                                    <span class="date">12/20</span>
+                                </div>
+                                
+                                <img src="https://images.pexels.com/photos/4003530/pexels-photo-4003530.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h6>24 Likes</h6>                 
+                                <p class="card-text">La mayoría de las especies de rinocerontes enfrenta serios peligros de extinción debido a la caza furtiva y la pérdida de hábitat. Los cuernos de rinoceronte son objeto de demanda en el mercado negro, lo que ha llevado a la matanza ilegal de estos animales. Varias especies de rinocerontes se consideran en peligro crítico o en peligro de extinción</p>
+                                    <div class="footer">
+                                    <span class="p-1"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
+                                    <input class="rounded text-secondary mr-2" placeholder="Comment..."/>
+                                    <i class=" icon1 fa-solid fa-ellipsis-vertical "></i>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+        
+        
+        
+                        <div class="row d-flex justify-content-center my-5">
+                            
+                            <div class="card" style="width: 37rem;">
+                                <div class="header">
+                                    <h5>new add</h5>
+                                    <span class="date">12/14</span>
+                                </div>
+                                
+                                <img src="" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h6>7 Likes</h6>                 
+                                <p class="card-text">pppppp</p>
+                                    <div class="footer">
+                                    <span class="p-1"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
+                                    <input class="rounded text-secondary mr-2"/>
+                                    <i class=" icon1 fa-solid fa-ellipsis-vertical "></i>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+        
+        
+        
+                        <div class="row d-flex justify-content-center my-5">
+                            
+                            <div class="card" style="width: 37rem;">
+                                <div class="header">
+                                    <h5>new add</h5>
+                                    <span class="date">12/14</span>
+                                </div>
+                                
+                                <img src="" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h6>7 Likes</h6>                 
+                                <p class="card-text">ppppppp</p>
+                                    <div class="footer">
+                                    <span class="p-1"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
+                                    <input class="rounded text-secondary mr-2">
+                                    <i class=" icon1 fa-solid fa-ellipsis-vertical "></i>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+    
+            </div>
+        
+        
+        
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                <div class="card-group">
+                    <div class="card">
+                      <img src="" class="card-img-top" alt="...">
+                     
+                    </div>
+                    <div class="card">
+                      <img src="" class="card-img-top" alt="...">
+                      
+                    </div>
+                    <div class="card">
+                      <img src="" class="card-img-top" alt="...">
+                      
+                    </div>
+                  </div>
+        
+        
+                  <div class="card-group">
+                    <div class="card">
+                      <img src="" class="card-img-top" alt="...">
+                     
+        
+        
+                    </div>
+                    <div class="card">
+                      <img src="" class="card-img-top" alt="...">
+                      
+        
+        
+                    </div>
+                    <div class="card">
+                      <img src="" class="card-img-top" alt="...">
+                      
+        
+        
+        
+                    </div>
+                  </div>
+                <div class="card-group">
+                    <div class="card">
+                      <img src="" class="card-img-top" alt="...">
+                     
+        
+        
+        
+                    </div>
+                    <div class="card">
+                      <img src="" class="card-img-top" alt="...">
+                      
+        
+        
+        
+                    </div>
+                    <div class="card">
+                      <img src="" class="card-img-top" alt="...">
+                      
+        
+        
+        
+                    </div>
+                  </div>
+                <div class="card-group">
+                    <div class="card">
+                      <img src="" class="card-img-top" alt="...">
+                     
+        
+        
+        
+                    </div>
+                    <div class="card">
+                      <img src="" class="card-img-top" alt="...">
+                      
+        
+        
+        
+                    </div>
+                    <div class="card">
+                      <img src="" class="card-img-top" alt="...">
+                      
+                    </div>
+                  </div>
+    
+                
+            </div>
+          </div>
+               
+            
+            
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
+        
+    </body>
+    
+    </html>   
